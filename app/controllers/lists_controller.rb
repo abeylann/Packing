@@ -4,13 +4,14 @@ class ListsController < ApplicationController
   # GET /lists.json
   def index
     # @lists = List.search(params[:search])
-    @places = Place.pluck(:name, :id).sort
-    @places = Place.select(:name).map(&:name).uniq
+    @places = Place.all
   end
 
   # GET /lists/1
   # GET /lists/1.json
   def show
+    @lists = List.where(:place_id => params[:place_id])
+    @place = Place.find(params[:place_id])
   end
   
   private

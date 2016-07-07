@@ -7,10 +7,13 @@ List.delete_all
   forest = Place.create(name: 'Forest')
   skiing = Place.create(name: 'Skiing')
 
-  list1 = List.create(items: 'basic')
-  Beach = List.create(items: 'summer')
-  list3 = List.create(items: 'winter')
+basic = '{Shoes, Makeup}'
+summer = '{Hat, Sunglasses}'
+winter = '{Scarf, Gloves }'
+forestt = '{Boots, Coat, Hat}'
 
-# basic = {'"Shoes, Makeup"'}
-# summer = {'"Hat, Sunglasses"'}
-# winter = {'"Scarf, Gloves"' }
+  list1 = List.create(items: basic, place_id: city.id)
+  list2 = List.create(items: summer, place_id: beach.id)
+  list3 = List.create(items: winter, place_id: skiing.id)
+  list4 = List.create(items: forestt, place_id: forest.id)
+

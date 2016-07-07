@@ -2,10 +2,12 @@
 
 <h3> Where are you going? </h3>
 
-<%= form_tag(lists_path, :method => "get") do %>
+<%= form_tag(list_path(:place_id), :method => "get") do %>
 <%= label_tag :place_id, "Where?" %>
-<%= select_tag :place_id, options_for_select(@places), prompt: "Search"%>
+<%= select_tag :place_id, options_from_collection_for_select(@places, "id", "name"), prompt: "Search"%>
 <%= submit_tag "Go!", name: nil %>
 <% end %>
+
+
 
 
