@@ -1,0 +1,11 @@
+<h1>So you want to travel!</h1>
+
+<h3> Where are you going? </h3>
+
+<%= form_tag(lists_path, :method => "get") do %>
+<%= label_tag :place_id, "Where?" %>
+<%= select_tag :place_id, options_for_select(@places), prompt: "Search"%>
+<%= submit_tag "Go!", name: nil %>
+<% end %>
+
+

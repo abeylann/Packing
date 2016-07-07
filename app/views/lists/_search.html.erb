@@ -1,0 +1,5 @@
+<%= form_tag(lists_path, :method => "get", id: "search-form") do %>
+<%= select_tag :place_id, options_for_select(@places), prompt: "Search" %>
+<%= submit_tag "Go!" %>
+<% end %>
+
