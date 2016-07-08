@@ -3,8 +3,7 @@ class ListsController < ApplicationController
   # GET /lists
   # GET /lists.json
   def index
-    # @lists = List.search(params[:search])
-    @places = Place.all
+    @places = Place.all.sort_by &:name
   end
 
   # GET /lists/1

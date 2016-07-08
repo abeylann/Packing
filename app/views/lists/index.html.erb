@@ -4,7 +4,8 @@
 
 <%= form_tag(list_path(:place_id), :method => "get") do %>
 <%= label_tag :place_id, "Where?" %>
-<%= select_tag :place_id, options_from_collection_for_select(@places, "id", "name"), prompt: "Search"%>
+<br>
+<%= select_tag :place_id, options_from_collection_for_select(@places, "id", "name"), prompt: nil %>
 <%= submit_tag "Go!", name: nil %>
 <% end %>
 

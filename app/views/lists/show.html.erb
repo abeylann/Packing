@@ -3,9 +3,8 @@
 <h1> <%= @place.name %> </h1>
 
 <% @lists.each do |list| %>
-<p><% list.items.each do |s| %>
-<label >
-<%= check_box_tag s %><%= s %><br>
+	<p><% list.items.each do |s| %>
+	<%= check_box_tag s %><%= s %><br>
 <% end %></p>
 
 <% end %>
