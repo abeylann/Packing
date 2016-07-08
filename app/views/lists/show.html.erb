@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1> <%= @place.name %> </h1>
+<h1> <%= @place.name %> </h1> <br>
+
+<h3> You'll need to bring: </h3>
 
 <% @lists.each do |list| %>
 	<p><% list.items.each do |s| %>
