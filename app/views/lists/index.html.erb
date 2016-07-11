@@ -6,7 +6,7 @@
 <%= label_tag :place_id, "Where?" %>
 <br>
 <%= select_tag :place_id, options_from_collection_for_select(@places, "id", "name"), prompt: nil %>
-<%= submit_tag "Go!", name: nil %>
+<%= submit_tag "Go!" %>
 <% end %>
 
 
