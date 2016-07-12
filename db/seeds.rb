@@ -8,8 +8,8 @@ List.delete_all
   skiing = Place.create(name: 'Skiing')
   hackathon = Place.create(name: 'Hackathon')
 
-basic = [ "Shampoo", "Conditioner", "Toothbrush", "Toothpaste", "Deodorant", "Towel", "Hairbrush",
-			"Phone Charger", "Earphones",  "ID", "Underwear", "Socks", "PJs", "Slippers"]
+basic = [ " Shampoo", " Conditioner", " Toothbrush", " Toothpaste", " Deodorant", " Towel", " Hairbrush",
+			" Phone Charger", " Earphones",  " ID", " Underwear", " Socks", " PJs", " Slippers"]
 summer = [ "Hat", "Sunglasses", "Flip Flops", "Bathing Suit", "Sunscreen", "Lip Balm",
 			"Hand Sanitizer", "Body Lotion"]
 winter = [ "Scarf", "Gloves", "Beanie", "Coat", "Cardigan", "Boots", "Blanket" ]
