@@ -4,15 +4,18 @@
 <h1>So, you want to travel (:</h1>
 </div>
 
+<div style= "margin-left:40px">
 <h3> Where are you going? </h3>
+</div>  
 
 <%= form_tag(list_path(:place_id), method: "get") do %>
 <br>
 
+<div align="center">
 <%= select_tag :place_id, options_from_collection_for_select(@places, "id", "name"), prompt: nil , class: "select"%>
 <%= submit_tag "Go!", class: "btn btn-default go" %>
 <% end %>
-
+</div>
 
 
 
