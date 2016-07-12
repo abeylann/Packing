@@ -22,8 +22,8 @@ th { border-bottom: 1px solid #DDD; }
    border: 1px solid #ccc;
    font-size: 18px;
    height: 50px;
-   width: 1000px;
-   text-align: center;
+   width: 100%;
+   align: center;
    display: inline;
 }
 
@@ -33,5 +33,4 @@ th { border-bottom: 1px solid #DDD; }
 	border: 1px solid #ccc;
     font-size: 18px;
     display: inline;
-
 }
