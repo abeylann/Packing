@@ -1,15 +1,16 @@
 <p id="notice"><%= notice %></p>
-
+<%= link_to 'Back', lists_path %>
+<div align="center">
 <h1> <%= @place.name %> </h1> <br>
+</div>
 
 <h3> You'll need to bring: </h3>
 
 <% @place.lists.each do |list| %>
 	<p>
 		<% list.items.each do |s| %>
-			<%= check_box_tag s%><%= s %><br>
+			<%= check_box_tag s %><td> &nbsp; &nbsp;</td><%= s %><br>
 		<% end %>
 	</p>
 <% end %>
 
-<%= link_to 'Back', lists_path %>

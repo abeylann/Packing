@@ -1,12 +1,12 @@
-<h1>So you want to travel!</h1>
+<h1>So, you want to travel (:</h1>
 
 <h3> Where are you going? </h3>
 
 <%= form_tag(list_path(:place_id), method: "get") do %>
-<%= label_tag :place_id, "Where?" %>
 <br>
-<%= select_tag :place_id, options_from_collection_for_select(@places, "id", "name"), prompt: nil %>
-<%= submit_tag "Go!" %>
+
+<%= select_tag :place_id, options_from_collection_for_select(@places, "id", "name"), prompt: nil , class: "select"%>
+<%= submit_tag "Go!", class: "btn btn-default go" %>
 <% end %>
 
 
