@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p>-->
 <%= link_to 'Back', lists_path %>
 <div align="center">
 <h1> <%= @place.name %> </h1> <br>
@@ -6,11 +6,17 @@
 
 <h3> You'll need to bring: </h3>
 
+<%= form_tag(my_lists_path, method: "get") do %>
 <% @place.lists.each do |list| %>
 	<p>
 		<% list.items.each do |s| %>
 			<%= check_box_tag s %><td> &nbsp; &nbsp;</td><%= s %><br>
 		<% end %>
 	</p>
+	
 <% end %>
 
+<div align="center">
+	<%= submit_tag "Save", class: "btn btn-default" %>
+</div>
+<% end %>
